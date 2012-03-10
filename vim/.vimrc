@@ -21,12 +21,6 @@
    set cinwords=if,unless,else,while,until,do,for,switch,case
    "Add syntax highlighting for .cu
     au BufNewFile,BufRead *.cu set ft=cu
-"Start in INSERT mode (woohoo!)!
-"   :start
-
-"Easy save/quit
-   "map w :mkview<CR>:w<CR>
-   "map q :q<CR>
 
 "Easy undo/redo
    map  :undo<CR>
@@ -73,18 +67,6 @@ match ErrorMsg '\%>80v.\+'
    "Close the tree when opening something
    let NERDTreeQuitOnOpen=1
 
-"Allow for easier access to "make" functionality
-   map  :make<cr>  
-   imap  <ESC>:make<cr>
-   map  :copen 10<cr>
-   imap  <ESC>:copen 10<cr>i
-   map  :cclose<cr>
-   imap  <ESC>:cclose<cr>
-
-"Make it easier to commit
-   :ab svc !svn commit % -m
-   :ab sop System.out.println
-
 "Save fold positions at exit and load at startup
    au BufWinLeave *.java mkview 
    au BufWinEnter *.java silent loadview 
@@ -95,3 +77,11 @@ au BufWinLeave *.sml silent loadview
 " Enable filetype plugin
 filetype plugin on
 
+" Autocompletion configuration
+set completeopt=longest,menuone
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
