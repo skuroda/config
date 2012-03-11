@@ -57,6 +57,16 @@ match ErrorMsg '\%>80v.\+'
    map ^` gt<cr>
    imap ^` gt<cr>i
 
+"Save fold positions at exit and load at startup
+   au BufWinLeave *.java mkview 
+   au BufWinEnter *.java silent loadview 
+
+au BufWinEnter *.sml mkview
+au BufWinLeave *.sml silent loadview
+
+" Enable filetype plugin
+   filetype plugin on
+
 "Make accessing the NERDTree easier  
    map  :NERDTreeToggle<cr>
    imap  <ESC>:NERDTreeToggle<cr>i
@@ -67,21 +77,20 @@ match ErrorMsg '\%>80v.\+'
    "Close the tree when opening something
    let NERDTreeQuitOnOpen=1
 
-"Save fold positions at exit and load at startup
-   au BufWinLeave *.java mkview 
-   au BufWinEnter *.java silent loadview 
-
-au BufWinEnter *.sml mkview
-au BufWinLeave *.sml silent loadview
-
-" Enable filetype plugin
-filetype plugin on
-
 " Autocompletion configuration
-set completeopt=longest,menuone
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+   set completeopt=longest,menuone
+   inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+   inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+      \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+   inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+      \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" Change windows with Alt + arrow keys
+   nmap <silent> <A-Up> :wincmd k<CR>
+   nmap <silent> <A-Down> :wincmd j<CR>
+   nmap <silent> <A-Left> :wincmd h<CR>
+   nmap <silent> <A-Right> :wincmd l<CR>
+
+" Open taglist with F8   
+   nnoremap <silent> <F8> :TlistToggle<CR>
