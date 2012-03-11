@@ -10,16 +10,16 @@
    set expandtab
    set showmatch
    set softtabstop=3
-   "Wrap lines
+"Wrap lines
    set wrap "Wrap lines
    set linebreak "Break at <tab>!@*-+;:,./?
    set nolist " Enable linebreak - Disable with set list
    set textwidth=0
    set wrapmargin=0 "Characters from the right border to wrap from
-   "end wrap lines
+"end wrap lines
    syntax on
    set cinwords=if,unless,else,while,until,do,for,switch,case
-   "Add syntax highlighting for .cu
+"Add syntax highlighting for .cu
     au BufNewFile,BufRead *.cu set ft=cu
 
 "Easy undo/redo
@@ -35,15 +35,8 @@
 "Mouse support
    set mouse=a
 
-"Delete lines in INSERT mode
-   imap  <ESC>ddi
-
-"Add column to display folds
-   set foldcolumn=3
-   highlight FoldColumn ctermfg=black ctermbg=16
-
 "Highlight lines longer than 80 chars
-match ErrorMsg '\%>80v.\+'
+   match ErrorMsg '\%>80v.\+'
 
 "Make tabbing from within Vim better 
    "Easier to make tabs
@@ -57,12 +50,6 @@ match ErrorMsg '\%>80v.\+'
    map ^` gt<cr>
    imap ^` gt<cr>i
 
-"Save fold positions at exit and load at startup
-   au BufWinLeave *.java mkview 
-   au BufWinEnter *.java silent loadview 
-
-au BufWinEnter *.sml mkview
-au BufWinLeave *.sml silent loadview
 
 " Enable filetype plugin
    filetype plugin on
