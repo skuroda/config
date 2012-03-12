@@ -80,4 +80,4 @@
    nmap <silent> <A-Right> :wincmd l<CR>
 
 " Open taglist with F8   
-   nnoremap <silent> <F8> :TlistUpdate | TlistToggle<CR>
+   nnoremap <silent> <F8> :TlistUpdate \| TlistToggle<CR>
