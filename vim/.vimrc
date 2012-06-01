@@ -81,3 +81,7 @@
 
 " Open taglist with F8   
    nnoremap <silent> <F8> :TlistUpdate \| TlistToggle<CR>
+
+" Cursor moves as expcted with wrapped lines
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk  
