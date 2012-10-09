@@ -1,0 +1,7 @@
+{
+	//"auto_complete_selector": "text - comment",
+	//"auto_complete_triggers": [ {"selector": "text.tex", "characters": "{"} ],
+    "auto_complete_commit_on_tab": true,
+    "wrap_width": 80,
+    "spell_check": true
+}
