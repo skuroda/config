@@ -1,5 +1,15 @@
 # Packages:
 * Sublime Package Control
+* AdvancedNewFile
+* SublimeLinter
+* FindKeyConflicts
 
-## LaTeX:
+## Trying out:
+* CTags
+
+## Application Specific
+### LaTeX:
 * LatexTools
+
+
+
