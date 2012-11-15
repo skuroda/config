@@ -4,10 +4,27 @@
 		"path": {
 			"#multiconf#": [{
 				"os:windows": "~/AppData/Roaming/Sublime Text 2/Packages",
-				"os.linux": "~/.config/sublime-text-2/Packages"
+				"os:linux": "~/.config/sublime-text-2/Packages"
+			}]
+		}
+	},{
+		"name": "Root",
+		"path": {
+			"#multiconf#": [{
+				"os:linux": "/"
+			}, {
+				"os:osx": "/"
+			}]
+		}
+	},{
+		"name": "My Computer",
+		"path": {
+			"#multiconf#": [{
+				"os:windows": ""
 			}]
 		}
 	}],
     "start_from_here_default_action": "home",
-    "bash_autocomplete": true
+    "nix_style_path_complete": true,
+    "case_sensitive": true
 }

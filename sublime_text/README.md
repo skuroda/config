@@ -5,9 +5,6 @@
 * FindKeyConflicts
 * FuzzyFileNav
 
-## Trying out:
-* CTags
-
 ## Application Specific
 ### LaTeX:
 * LatexTools

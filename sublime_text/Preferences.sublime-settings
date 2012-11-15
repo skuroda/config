@@ -1,4 +1,28 @@
 {
+	"file_exclude_patterns":
+	[
+		".tags",
+		".tags_sorted_by_file",
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db"
+	],
 	"ignored_packages":
 	[
 		"Vintage"
@@ -6,7 +30,5 @@
 	"rulers":
 	[
 		80
-	],
-	"translate_tabs_to_spaces": true,
-	"file_exclude_patterns": [".tags", ".tags_sorted_by_file", "*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db"]
+	]
 }

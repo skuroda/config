@@ -1,5 +1,7 @@
 Gist.sublime-settings
 GitHub.sublime-settings
+*.pyc
+*.cache
 *.sublime-project
 *.sublime-workspace
 
