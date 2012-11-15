@@ -1,0 +1,13 @@
+{
+	"bookmarks":[{
+		"name": "Sublime Packages",
+		"path": {
+			"#multiconf#": [{
+				"os:windows": "~/AppData/Roaming/Sublime Text 2/Packages",
+				"os.linux": "~/.config/sublime-text-2/Packages"
+			}]
+		}
+	}],
+    "start_from_here_default_action": "home",
+    "bash_autocomplete": true
+}

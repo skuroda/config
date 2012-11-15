@@ -3,6 +3,7 @@
 * AdvancedNewFile
 * SublimeLinter
 * FindKeyConflicts
+* FuzzyFileNav
 
 ## Trying out:
 * CTags
