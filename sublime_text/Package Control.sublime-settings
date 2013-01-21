@@ -1,0 +1,23 @@
+{
+    "auto_upgrade_last_run": null,
+    "ignore_vcs_packages": true,
+    "installed_packages":
+    [
+        "Alignment",
+        "BracketHighlighter",
+        "ExportHtml",
+        "FuzzyFileNav",
+        "JsFormat",
+        "LaTeXTools",
+        "Origami",
+        "Package Control",
+        "sublime-github",
+        "SublimeLinter",
+        "SublimeTODO",
+        "Theme - Phoenix"
+    ],
+    "repositories":
+    [
+        "https://github.com/facelessuser/BracketHighlighter/tree/BH2"
+    ]
+}
