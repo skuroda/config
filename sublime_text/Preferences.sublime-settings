@@ -4,7 +4,7 @@
 		80
 	],
 	"auto_complete_commit_on_tab": true,
-	"font_size": 11,
+	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage",
@@ -20,5 +20,5 @@
 	"theme": "Phoenix Dark.sublime-theme",
 	"phoenix_classic_tabs": true,
 	// Color Scheme
-	"color_scheme": "Packages/Theme - Phoenix/Color Scheme/Tomorrow-Night.tmTheme"
+	"color_scheme": "Packages/User/Color Scheme/Monokai.tmTheme"
 }
