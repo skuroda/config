@@ -3,7 +3,8 @@
 		"name": "Sublime Packages",
 		"path": {
 			"#multiconf#": [{
-				"os:windows": "~/AppData/Roaming/Sublime Text 2/Packages",
+				"os:windows": "~\\AppData\\Roaming\\Sublime Text 2\\Packages"
+			},{
 				"os:linux": "~/.config/sublime-text-2/Packages"
 			}]
 		}
@@ -23,8 +24,10 @@
 				"os:windows": ""
 			}]
 		}
+	},{
+		"name": "Desktop",
+		"path": "~/Desktop"
 	}],
     "start_from_here_default_action": "home",
-    "nix_style_path_complete": true,
-    "case_sensitive": true
+    "nix_style_path_complete": true
 }
