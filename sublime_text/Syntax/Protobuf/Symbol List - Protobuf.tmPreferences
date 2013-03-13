@@ -5,7 +5,7 @@
     <key>name</key>
     <string>Symbol List: Protobuf Types</string>
     <key>scope</key>
-    <string>source.proto meta.class.proto</string>
+    <string>source.proto meta.service.proto, source.proto meta.message.proto</string>
     <key>settings</key>
     <dict>
         <key>showInSymbolList</key>

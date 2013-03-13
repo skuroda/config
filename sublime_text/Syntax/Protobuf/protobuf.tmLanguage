@@ -27,9 +27,28 @@
                 </dict>
             </dict>
             <key>match</key>
-            <string>^\s*(default|enum|extend|extensions|message|option|optional|package|rpc|repeated|required|returns|service)\s+([.a-zA-Z0-9]+)</string>
+            <string>^\s*(enum|extend|message)\s+([\w.]+)</string>
             <key>name</key>
-            <string>meta.class.proto</string>
+            <string>meta.message.proto</string>
+        </dict>
+        <dict>
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>keyword.operator.proto</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>entity.name.type.proto</string>
+                </dict>
+            </dict>
+            <key>match</key>
+            <string>^\s*(service)\s+([\w.]+)</string>
+            <key>name</key>
+            <string>meta.service.proto</string>
         </dict>
         <dict>
             <key>match</key>
