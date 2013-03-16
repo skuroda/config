@@ -49,11 +49,7 @@
             <array>
                 <dict>
                     <key>include</key>
-                    <string>#tagStuff</string>
-                </dict>
-                <dict>
-                    <key>include</key>
-                    <string>#xmlPatterns</string>
+                    <string>text.html.basic</string>
                 </dict>
             </array>
         </dict>
@@ -230,104 +226,6 @@
                 <dict>
                     <key>include</key>
                     <string>#bare-ampersand</string>
-                </dict>
-            </array>
-        </dict>
-        <key>tagStuff</key>
-        <dict>
-            <key>patterns</key>
-            <array>
-                <dict>
-                    <key>captures</key>
-                    <dict>
-                        <key>1</key>
-                        <dict>
-                            <key>name</key>
-                            <string>entity.other.attribute-name.namespace.dot</string>
-                        </dict>
-                        <key>2</key>
-                        <dict>
-                            <key>name</key>
-                            <string>entity.other.attribute-name.dot</string>
-                        </dict>
-                        <key>3</key>
-                        <dict>
-                            <key>name</key>
-                            <string>punctuation.separator.namespace.dot</string>
-                        </dict>
-                        <key>4</key>
-                        <dict>
-                            <key>name</key>
-                            <string>entity.other.attribute-name.localname.dot</string>
-                        </dict>
-                    </dict>
-                    <key>match</key>
-                    <string> (?:([-_a-zA-Z0-9]+)((:)))?([-_a-zA-Z0-9]+)=</string>
-                </dict>
-                <dict>
-                    <key>include</key>
-                    <string>#doublequotedString</string>
-                </dict>
-                <dict>
-                    <key>include</key>
-                    <string>#singlequotedString</string>
-                </dict>
-            </array>
-        </dict>
-        <key>xmlPatterns</key>
-        <dict>
-            <key>patterns</key>
-            <array>
-                <dict>
-                    <key>begin</key>
-                    <string>(&lt;/?)(?:([-_a-zA-Z0-9]+)((:)))?([-_a-zA-Z0-9:]+)</string>
-                    <key>captures</key>
-                    <dict>
-                        <key>1</key>
-                        <dict>
-                            <key>name</key>
-                            <string>punctuation.definition.tag.begin.dot</string>
-                        </dict>
-                        <key>2</key>
-                        <dict>
-                            <key>name</key>
-                            <string>entity.name.tag.namespace.dot</string>
-                        </dict>
-                        <key>3</key>
-                        <dict>
-                            <key>name</key>
-                            <string>entity.name.tag.dot</string>
-                        </dict>
-                        <key>4</key>
-                        <dict>
-                            <key>name</key>
-                            <string>punctuation.separator.namespace.dot</string>
-                        </dict>
-                        <key>5</key>
-                        <dict>
-                            <key>name</key>
-                            <string>entity.name.tag.localname.dot</string>
-                        </dict>
-                    </dict>
-                    <key>end</key>
-                    <string>(/?&gt;)</string>
-                    <key>endCaptures</key>
-                    <dict>
-                        <key>1</key>
-                        <dict>
-                            <key>name</key>
-                            <string>punctuation.definition.tag.end.dot</string>
-                        </dict>
-                    </dict>
-                    <key>name</key>
-                    <string>meta.tag.dot</string>
-                    <key>patterns</key>
-                    <array>
-                        <dict>
-                            <key>include</key>
-                            <string>#tagStuff</string>
-                        </dict>
-                    </array>
                 </dict>
             </array>
         </dict>
