@@ -46,7 +46,7 @@
                 </dict>
             </dict>
             <key>match</key>
-            <string>^\s*(service)\s+([\w.]+)</string>
+            <string>^\s*(service|rpc)\s+([\w.]+)</string>
             <key>name</key>
             <string>meta.service.proto</string>
         </dict>
@@ -89,18 +89,6 @@
             <string>\b((([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)(L|l|F|f)?\b</string>
             <key>name</key>
             <string>constant.numeric.proto</string>
-        </dict>
-        <dict>
-            <key>captures</key>
-            <dict>
-                <key>1</key>
-                <dict>
-                    <key>name</key>
-                    <string>entity.name.function.proto</string>
-                </dict>
-            </dict>
-            <key>match</key>
-            <string>\b([a-zA-Z0-9_\.]*?)\(</string>
         </dict>
         <dict>
             <key>begin</key>
