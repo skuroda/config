@@ -51,9 +51,9 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Variable, String Link, Tag Name</string>
+            <string>Keyword, Variable, String Link, Tag Name</string>
             <key>scope</key>
-            <string>variable, support.other.variable, string.other.link, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
+            <string>keyword, variable, support.other.variable, string.other.link, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
             <key>settings</key>
             <dict>
                 <key>foreground</key>
@@ -125,9 +125,9 @@
         </dict>
         <dict>
             <key>name</key>
-            <string>Keyword, Storage</string>
+            <string>Storage</string>
             <key>scope</key>
-            <string>keyword, storage, storage.type, entity.name.tag.css</string>
+            <string>storage, storage.type, entity.name.tag.css</string>
             <key>settings</key>
             <dict>
                 <key>fontStyle</key>
