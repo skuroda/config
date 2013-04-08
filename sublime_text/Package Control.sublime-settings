@@ -3,6 +3,7 @@
     "ignore_vcs_packages": true,
     "installed_packages":
     [
+        "AAALanguages",
         "Alignment",
         "AdvancedNewFile"
         "BracketHighlighter",
@@ -17,8 +18,13 @@
         "SublimeTODO",
         "Theme - Phoenix"
     ],
+    "package_name_map":
+    {
+        "sublime-languages": "AAALanguages"
+    },
     "repositories":
     [
-        "https://github.com/facelessuser/BracketHighlighter/tree/BH2"
+        "https://github.com/facelessuser/BracketHighlighter/tree/BH2",
+        "https://github.com/facelessuser/sublime-languages"
     ]
 }
